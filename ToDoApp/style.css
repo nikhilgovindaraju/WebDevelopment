@@ -60,6 +60,7 @@ ul li{
     padding: 20px 20px 20px 50px;
     user-select: none;
     cursor: pointer;
+    position: relative;
 }
 ul li.checked{
     color: red;
@@ -72,8 +73,13 @@ ul li span{
     top: 5px;
     width: 40px;
     height: 40px;
-    font-size: 20px;
+    font-size: 30px;
     color: red;
     line-height: 40px;
     text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
 }
