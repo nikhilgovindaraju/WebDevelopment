@@ -1,0 +1,110 @@
+body {
+    background-color: burlywood;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.formControl {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.formControl label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formControl input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formControl input.success {
+    border-color: green;
+}
+
+.formControl input.error {
+    border-color: red;
+}
+
+.formControl i {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    visibility: hidden;
+}
+
+.formControl.success i.fa-check-circle {
+    color: green;
+    visibility: visible;
+}
+
+.formControl.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+}
+
+.formControl small {
+    color: red;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.formControl.error small {
+    visibility: visible;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
