@@ -1,0 +1,125 @@
+body{
+    background-color: #e5e5e5;
+    width: 500px;
+}
+.formContainer{
+    width: 450px;
+    height: 340px;
+    align-items: center;
+    background-color: white;
+    margin-left: 400px;
+    margin-top: 50px;
+    border-radius: 2px;
+}
+#weatherHeading{
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+#filloutformLine{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.textBoxContainer{
+    width: 450px;
+    height: 85px;
+    justify-content: center;
+    background-image: url("images/banner.jpg");
+    background-position: 4% 19%;
+    background-size: 1125px;
+
+}
+.formStreet label{
+    color: blue;
+    display: block;
+    margin-bottom: 2px;
+}
+.formStreet {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.formStreet input {
+    width: 90%;
+    padding: 3px;
+    border: 2px solid #f0f0f0;
+    border-radius: 1px;
+    font-size: 12px;
+}
+.formStreet label:after{
+    content: "*";
+    color: red;
+}
+.formCity label{
+    color: blue;
+    display: block;
+    margin-bottom: 2px;
+}
+.formCity label:after{
+    content: "*";
+    color: red;
+}
+.formState label{
+    color: blue;
+    display: block;
+    margin-bottom: 2px;
+}
+.formState label:after{
+    content: "*";
+    color: red;
+}
+.formsecondLine {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin-left: 20px;
+}
+#select-state{
+    width: 180px;
+    padding: 2px;
+    border: 1px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+#horizontalrule{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 85%;
+}
+#auto-detect-text{
+    color: blue;
+    margin-left: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#submitButton{
+    background-color: #1f508a;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 2px;
+}
+#clearButton{
+    background-color: #e99d4c;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 2px;
+    border-width: 2px;
+}
