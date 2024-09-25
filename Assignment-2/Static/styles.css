@@ -1,6 +1,7 @@
 body{
     background-color: #e5e5e5;
     width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .formContainer{
     width: 450px;
@@ -16,11 +17,13 @@ body{
     padding-top: 20px;
     margin-left: 20px;
     font-weight: 700;
+    color: #494949;
 }
 #filloutformLine{
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 20px;
+    color: #494949;
 }
 .textBoxContainer{
     width: 450px;
@@ -32,7 +35,7 @@ body{
 
 }
 .formStreet label{
-    color: blue;
+    color: #4a66a8;
     display: block;
     margin-bottom: 2px;
 }
@@ -55,7 +58,7 @@ body{
     color: red;
 }
 .formCity label{
-    color: blue;
+    color: #4a66a8;
     display: block;
     margin-bottom: 2px;
 }
@@ -64,7 +67,7 @@ body{
     color: red;
 }
 .formState label{
-    color: blue;
+    color: #4a66a8;
     display: block;
     margin-bottom: 2px;
 }
@@ -91,7 +94,7 @@ body{
     width: 85%;
 }
 #auto-detect-text{
-    color: blue;
+    color: #4a66a8;
     margin-left: 20px;
 }
 .buttons{
@@ -101,25 +104,305 @@ body{
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 30px;
+    gap: 5px;
+
 }
 #submitButton{
     background-color: #1f508a;
     color: white;
     padding: 10px 10px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    border-radius: 2px;
+    border-width: 0px;
+    border-bottom: 3px solid #0e3667;
+
 }
 #clearButton{
     background-color: #e99d4c;
     color: black;
     padding: 10px 10px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    border-radius: 2px;
-    border-width: 2px;
+    border-width: 0px;
+    border-bottom: 3px solid #b36b1b;
+}
+.mainContainer {
+    height: 335px;
+    width: 600px;
+    background-color: white;
+    margin-left: 400px;
+}
+
+#addressLine{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: gray;
+    font-size: 25px;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.imageContainer {
+    width: 450px;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+   }
+
+   #degree{
+    font-size: 120px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 350;
+    color: gray;
+    justify-content: right;
+    margin-right: -80px;
+
+   }
+   
+   #weatherImage{
+    height: 130px;
+    width: 130px;
+    margin-left: 20px;
+}
+
+#weatherStatus{
+    font-size: 15px;
+    margin-left: 35px;
+}
+.weatherInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+#icons{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#weatherParameters{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#paramValues{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.humidity{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+.pressure{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.windspeed{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.visibility{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.cloudcover{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.uvlevel{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+table {
+    width: 900px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+#tableHeader {
+    background-color: #4a66a8;
+    color: black;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+td {
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+#weatherDetailsHeading{
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: #494949;
+    margin-left: 300px;
+    margin-top: 20px;
+
+}
+
+#hr_weatherdetails1{
+    margin-top: -23px;
+    margin-bottom: 10px;
+    width: 260px;
+    background-color: white;
+    color: white;
+    size: 2;
+    margin-left: 530px;
+}
+#hr_weatherdetails2{
+    margin-top: -23px;
+    margin-bottom: 10px;
+    width: 260px;
+    background-color: white;
+    color: white;
+    size: 2;
+    margin-left: 530px;
+
+}
+
+
+
+.weatherDetailsContainer{
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    line-height: 0.75;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.detailedWeather{
+    background:linear-gradient(white,#44547C);
+    width: 500px;
+    height: 380px;
+    margin-left: 400px;
+}
+.dateStatusImageContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#date{
+    font-size: 24px;
+    color: #415179;
+    margin-left: 0px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+#weatherType{
+    font-size: 23px;
+    color: #415179;
+    margin-left: 0px;
+    font-weight: 500;
+    margin-top: 11px;
+}
+#highlowTemp{
+    font-size: 30px;
+    color: #415179;
+    margin-left: -3px;
+    font-weight: 500;
+    margin-top: -6px;
+}
+
+#weatherDetailsImage{
+    height: 155px;
+    width: 160px;
+    margin-right: 10px;
+    margin-top: -8px;
+
+}
+
+#weather-header {
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: 350;
+    color: #494949;
+    width: 500px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#weather-footer{
+
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: 350;
+    color: #494949;
+    width: 500px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#downarrow{
+    height: 50px;
+    width: 50px;
+    margin-left: 630px;
+    margin-right: 10px;
+    margin-top: -4px;
 }
