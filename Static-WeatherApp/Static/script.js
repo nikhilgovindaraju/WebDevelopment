@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
     
     async function getLocation() {
-        const accessToken = '';  // Your access token
+        const accessToken = ''; 
     
         try {
             const response = await fetch(`https://ipinfo.io/json?token=${accessToken}`);
